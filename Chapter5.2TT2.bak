@@ -1,0 +1,14 @@
+#lang racket
+(require 2htdp/universe 2htdp/image)
+(define WIDTH 800)
+(define HEIGHT 600)
+(define TEXT-SIZE 10)
+(define SIZE 72)
+(define TEXT-X 3)
+(define TEXT-UPPER-Y 10)
+(define TEXT-LOWER-Y 135)
+
+(struct interval (small big))
+(define HELP-TEXT (text "↑ for larger numbers, ↓ for smaller numbers") TEXT-SIZE "blue"))
+(define HELP-TEXT2 (text "Press = when your number is guessed; q to quit." TEXT-SIZE "blue"))
+(define COLOR "red")
